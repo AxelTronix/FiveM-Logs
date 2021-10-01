@@ -16,7 +16,7 @@ You add the event anywhere in server side Code! and boom it works.
 
 ### Documentation (Soon)
 ```lua
-TriggerEvent("tronix-log:server:CreateLog", "webhooknameinhere", "Title", "Colour", "Message")
+TriggerEvent("tronix-log:server:CreateLog", "webhookname", "Title", "ColourName", "Message")
 ```
 
 ![bg][banners]
