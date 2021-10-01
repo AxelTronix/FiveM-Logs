@@ -12,10 +12,7 @@ local Config = {}
 -- Send message when Player connects to the server.
 AddEventHandler("playerConnecting", function(name, setReason, deferrals)
    local ids = ExtractIdentifiers(source)
-   if Config.discordID then if ids.discord ~= "" then _discordID ="\n**Discord ID:** <@" ..ids.discord:gsub("discord:", "")..">" else _discordID = "\n**Discord ID:** N/A" end else _discordID = "" end
-   if Config.steamID then if ids.steam ~= "" then _steamID ="\n**Steam ID:** " ..ids.steam.."" else _steamID = "\n**Steam ID:** N/A" end else _steamID = "" end
-   if Config.steamURL then  if ids.steam ~= "" then _steamURL ="\nhttps://steamcommunity.com/profiles/" ..tonumber(ids.steam:gsub("steam:", ""),16).."" else _steamURL = "\n**Steam URL:** N/A" end else _steamID = "" end
-   
+
    TriggerEvent("tronix-log:server:CreateLog", "joinleave", "Joining", "green", "\r **Name: " .. GetPlayerName(source) .."**\n is connecting to the server!..")
 
 end)
@@ -23,11 +20,7 @@ end)
 -- Send message when Player disconnects from the server
 AddEventHandler('playerDropped', function(reason)
    local ids = ExtractIdentifiers(source)
-   if Config.discordID then if ids.discord ~= "" then _discordID ="\n**Discord ID:** <@" ..ids.discord:gsub("discord:", "")..">" else _discordID = "\n**Discord ID:** N/A" end else _discordID = "" end
-   if Config.steamID then if ids.steam ~= "" then _steamID ="\n**Steam ID:** " ..ids.steam.."" else _steamID = "\n**Steam ID:** N/A" end else _steamID = "" end
-   if Config.steamURL then  if ids.steam ~= "" then _steamURL ="\nhttps://steamcommunity.com/profiles/" ..tonumber(ids.steam:gsub("steam:", ""),16).."" else _steamURL = "\n**Steam URL:** N/A" end else _steamID = "" end
-   if Config.playerID then _playerID ="\n**Player ID:** " ..source.."" else _playerID = "" end
-   
+
    TriggerEvent("tronix-log:server:CreateLog", "joinleave", "Leaving", "green", "** ID: ".. source .. "\r Name: " .. GetPlayerName(source) .."**\n has left the server ".. reason .."!..")
 
 end)
@@ -91,7 +84,7 @@ end
 
   -- Example -- 
 
-  --TriggerEvent("tronix-log:server:CreateLog", "webhooknameinhere", "Top Of Message", "Colour", "Message")
+  --TriggerEvent("tronix-log:server:CreateLog", "webhooknameinhere", "Title", "Colour", "Message")
 
 TronixWebhooks = {
       ["default"] = "webhook",
@@ -112,3 +105,11 @@ TronixWebhooks = {
       ["pink"] = 16711900,
       ["red"] = 16711680,
   }
+
+
+
+
+
+
+
+
