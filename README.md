@@ -22,3 +22,12 @@ TriggerEvent("tronix-log:server:CreateLog", "webhooknameinhere", "Title", "Colou
 ![bg][banners]
 
 [banners]: https://cdn.discordapp.com/attachments/800195998235623425/893321521404182528/sadasd.png
+
+
+
+
+
+
+![bg][bannerss]
+
+[bannerss]: https://cdn.discordapp.com/attachments/800195998235623425/893322516179865600/colour.png
