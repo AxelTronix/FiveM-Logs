@@ -7,6 +7,11 @@
 # How does it work?
 You add the event anywhere in server side Code! and boom it works.
 
+# Features
+
+- Easy to use
+- Comes with Pre-made Join/Leave logs
+-
 ### Installation
 1. Drop Logs into resources 
 2. add start Logs into server.cfg
